@@ -20,7 +20,7 @@ public class PersonagemGame {
         } else {
             this.status = "vivo";
         }
-        
+
         this.saudeAtual = saudeAtual;
     }
 
@@ -33,11 +33,11 @@ public class PersonagemGame {
     }
 
     public void tomarDano(int quantidadeDeDano) {
-        setSaudeAtual(this.saudeAtual - quantidadeDeDano);
+        setSaudeAtual(getSaudeAtual() - quantidadeDeDano);
     }
 
     public void receberCura(int quantidadeDeCura) {
-        setSaudeAtual(this.saudeAtual + quantidadeDeCura);
+        setSaudeAtual(getSaudeAtual() + quantidadeDeCura);
     }
 
     public String getStatus() {
