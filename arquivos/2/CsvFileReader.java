@@ -1,6 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;     
+import java.io.IOException;
 
 public class CsvFileReader {
     public static void main(String[] args) {
@@ -16,7 +16,8 @@ public class CsvFileReader {
                 System.out.printf("Salarial: %s\n", linha.split(",")[3]);
                 System.out.println("------------------------");
             }
-            System.err.println("Leitura do arquivo concluída.\n");
+            System.err.println("Leitura do arquivo concluída.");
+            System.err.println("                             ");
         } catch (IOException e) {
             System.out.printf("Erro ao ler o arquivo: %s \n", e.getMessage());
         }
