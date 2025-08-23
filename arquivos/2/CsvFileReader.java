@@ -10,14 +10,15 @@ public class CsvFileReader {
             String linha;
 
             while ((linha = reader.readLine()) != null) {
-                System.out.printf("Funcionário: %s\n", linha.split(",")[0]);
-                System.out.printf("Idade: %s\n", linha.split(",")[1]);
-                System.out.printf("Departamento: %s\n", linha.split(",")[2]);
-                System.out.printf("Salarial: %s\n", linha.split(",")[3]);
+                String[] dados = linha.split(",");
+                System.out.printf("Funcionário: %s\n", dados[0]);
+                System.out.printf("Idade: %s\n", dados[1]);
+                System.out.printf("Departamento: %s\n", dados[2]);
+                System.out.printf("Salarial: %s\n", dados[3]);
                 System.out.println("------------------------");
             }
-            System.err.println("Leitura do arquivo concluída.");
-            System.err.println("                             ");
+            System.out.println("Leitura do arquivo concluída.");
+            reader.close();
         } catch (IOException e) {
             System.out.printf("Erro ao ler o arquivo: %s \n", e.getMessage());
         }
