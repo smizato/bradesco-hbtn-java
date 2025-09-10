@@ -49,7 +49,9 @@ public class GestaoAlunos {
         }
 
         System.out.println("Lista de alunos:");
-        alunos.forEach(System.out::println);
+        for (Aluno aluno : alunos) {
+            System.out.println(aluno);
+        }   
     }
 
     public static void main(String[] args) {

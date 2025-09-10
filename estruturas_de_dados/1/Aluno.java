@@ -24,7 +24,8 @@ public class Aluno {
         this.idade = idade;
     }
 
+    @Override
     public String toString() {
-        return "Aluno {nome='" + nome + "', idade=" + idade + "}";
+        return "Nome: " + nome + " Idade: " + idade;
     }
 }
