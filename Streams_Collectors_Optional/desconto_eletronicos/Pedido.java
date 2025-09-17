@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Locale;
 
 public class Pedido {
     private long codigo;
@@ -25,6 +26,7 @@ public class Pedido {
 
     @Override
     public String toString() {
+        Locale.setDefault(new Locale("pt", "BR"));
         return String.format("[%d] %s", codigo, cliente.getNome());
     }
 }
