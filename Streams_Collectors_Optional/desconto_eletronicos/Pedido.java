@@ -26,7 +26,6 @@ public class Pedido {
 
     @Override
     public String toString() {
-        Locale.setDefault(new Locale("pt", "BR"));
         return String.format("[%d] %s", codigo, cliente.getNome());
     }
 }
